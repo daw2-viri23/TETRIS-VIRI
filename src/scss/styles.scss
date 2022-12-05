@@ -100,7 +100,16 @@ hr{
   color: white;
 }
 
-
+*{
+  background-color: #111111;
+  margin: 0;
+  padding: 0;
+  }
+.p_fila{
+  display: flex;
+  background-color: black;
+  width: 300px;
+}
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
