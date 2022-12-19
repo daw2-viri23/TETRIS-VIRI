@@ -9,5 +9,6 @@ import { ModeloPieza } from './ModeloPieza.js';
 
 console.log(panel)
 
-const ModeloDePieza = new ModeloPieza()
-console.log((ModeloDePieza))
+console.log(panel.nuevaPieza)
+
+console.log(panel.crearNuevaPieza())
