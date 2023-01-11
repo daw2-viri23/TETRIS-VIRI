@@ -1,26 +1,24 @@
 import { model } from "./model.js";
 export class ModeloPieza {
-    constructor(figura){
-        this.modelo = figura
+    constructor(modelo){
+        this.modelo = modelo
         this.angulo = 0
-        this.matriz = model[this.modelo].matriz[this.angulo]
-        
-        this.x = 1
+        this.matriz = model[modelo].matriz[this.angulo]
+        this.x = 0
         this.y = 1
-        this.longitud = this.matriz[0][0].length || 0
-        this.altura = this.matriz[0].length || 0
-
-        
-
-        console.log(figura)
-        console.log("longitud: " + this.altura)
-        console.log("altura: " + this.altura)
+        this.longitud = this.matriz[0].length
+        this.altura = this.matriz.length
     }
-
-    girar =()=>{
-        this.angulo = this.angulo + 1
-        if(this.angulo == 4){
+    girar = ()=>{
+        if(this.angulo<=3){
+            this.angulo = this.angulo +1
+        }
+        if(this.angulo>3){
             this.angulo = 0
         }
+        this.matriz = model[this.modelo].matriz[this.angulo]
+        this.longitud = this.matriz[0].length
+        this.altura = this.matriz.length
     }
+    
 }

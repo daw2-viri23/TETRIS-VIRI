@@ -7,8 +7,13 @@ import { model } from './model.js';
 import { panel } from './panel.js';
 import { ModeloPieza } from './ModeloPieza.js';
 
-console.log(panel)
 
-console.log(panel.nuevaPieza)
+panel.crearNuevaPieza()
 
-console.log(panel.crearNuevaPieza())
+panel.insertarPieza()
+
+panel.pintaPanel()
+
+panel.controlTeclas()
+
+panel.iniciarMovimiento()

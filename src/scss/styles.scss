@@ -38,12 +38,11 @@ $headings-font-family:   'Press Start 2P', cursive;
 
 //mis estilos propios
 .celda{
-  border: 0px solid #111111;
+
   width: 30px;
   height: 30px;
   margin: 1px;
-  background-color: #131212 ;
-  
+
 }
 .p-fila{
   display: flex;
@@ -59,7 +58,6 @@ $headings-font-family:   'Press Start 2P', cursive;
   justify-content: center;
 }
 #panel{
-  border: 1px solid black;
   width: 300px;
   
 }
@@ -101,13 +99,12 @@ hr{
 }
 
 *{
-  background-color: #111111;
+
   margin: 0;
   padding: 0;
   }
 .p_fila{
   display: flex;
-  background-color: black;
   width: 300px;
 }
 // Required
